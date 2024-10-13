@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url(../images/m/bg_p.png);
+    background-size: 100%;
+}
+.people{
+    position: fixed;
+    transition: .1s;
+    cursor: pointer;
+}
+.people img{
+    height: 200px;
+}
+.girl{
+    top: 100px;
+    left: 380px;
+}
+.boy{
+    top: 100px;
+    left: 120px;
+}
+.boyp{
+    color: #3a3a31;
+    font-family: '宋体';
+    font-weight: 600;
+    background-color: #c2bba5;
+    position: absolute;
+    top: 35%;
+    border-radius: 5px;
+    left: 80%;
+    text-align: center;
+    border: #413933 2px solid;
+    display: none;
+}
+
+.tip {
+    position: absolute;
+    width: 100px;
+    height: 37px;
+    top: 2%;
+    left: 2%;
+    background-color: #c2bba5;
+    text-align: center;
+    border: #413933 2px solid;
+    border-radius: 5px;
+    color: #3a3a31;
+    font-family: '宋体';
+    font-weight: 600;
+    opacity: 0.5;
+}
+.refresh {
+    position: absolute;
+    width: 45px;
+    height: 30px;
+    top: 2%;
+    right: 2%;
+    background-color: #c2bba5;
+    text-align: center;
+    border: #413933 2px solid;
+    border-radius: 5px;
+    color: #3a3a31;
+    font-family: '宋体';
+    font-weight: 600;
+}
+.refresh:hover {
+    cursor: pointer;
+}
+
+
+
+
+#progress {
+    width: 0;
+    border-radius: 6px;
+    height: 100%;
+    position: relative;
+    background-image: linear-gradient(to right, rgb(20, 115, 158), rgb(137, 255, 200));
+}
+.Blackhover{
+    width: 100%;
+    background-color: #292a2e;
+    z-index: 99999;
+    height: 1000px;
+    position: fixed;
+    /* transition: .3s; */
+    top: 0;
+}
+#progress p{
+    color: aliceblue;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: .8;
+    user-select: none;
+    /* font-weight: 600; */
+    letter-spacing: 1px;
+}
+.progressTitle{
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(240, 248, 255, 0.821);
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 10px;
+    user-select: none;
+}
+.soManyMins{
+    bottom: -115px;
+    letter-spacing: 0;
+    text-align: center;
+    width: 46%;
+    font-size: 15px;
+    opacity: .55;
+}

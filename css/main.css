@@ -1,0 +1,298 @@
+
+#page3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+    opacity: 1;
+    
+}
+
+
+#page4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: #BAB8A3;; */
+    /* display: none; */
+    opacity: 0;
+    transition-duration: 1.5s;
+    transition-property: opacity;
+}
+
+.music {
+    width: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+#people {
+    width: 230px;
+    height: 250px;
+    position: absolute;
+    top: 8%;
+    left: 7%;
+    /* background-color: aqua; */
+    background-image: url("../images/front1.png");
+    background-size: cover;
+
+}
+
+
+#mango {
+    width: 75px;
+    height: 70px;
+    position: absolute;
+
+    top: 29%;
+    left: 13%;
+    opacity: 0;
+    transition-duration: 1.5s;
+    transition-property: opacity;
+}
+#mango img {
+    width: 100%;
+    transition:0.5s all cubic-bezier(.36,-0.41,1,.58);
+}
+
+.bg {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    position: fixed;
+    opacity: 0.3;
+    -webkit-opacity: 0.3;
+    -moz-opacity: 0.3;
+    display: none;
+    z-index: 2;
+}
+
+#info {
+    width: 60%;
+    height: 75%;
+    position: absolute;
+    left: 19%;
+    top: 12%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    display: none;
+    z-index: 3;
+}
+
+#close {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    right: 2%;
+    top: 3%;
+    color: gray;
+}
+#close:hover {
+    cursor: pointer;
+}
+
+#content {
+    position: absolute;
+    display: inline-block;
+    width: 96%;
+    height: 88%;
+    right: 2%;
+    top: 9%;
+    text-indent: 2rem;
+    line-height: 30px;
+    font-size: 17px;
+    overflow-y: auto;
+}
+#content p {
+    font-family:  "KaiTi";
+    padding: 2%;
+    color: #733C12;
+
+}
+
+#boxes {
+    width: 800px;
+    height: 500px;
+    left: 32%;
+    top: 50px;
+    position: relative;
+    list-style: none;
+    /* background-color: brown; */
+    z-index: 1;
+}
+#boxes li {
+    display: inline-block;
+    /* background-color: aquamarine; */
+    width: 200px;
+    height: 200px;
+    margin-right: 63px;
+    /* margin-bottom: 60px; */
+    margin-top: 45px;
+    background-image: url("../images/bclose.png");
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: center;
+}
+
+#boxes li:hover {
+    cursor: pointer;
+    background-image: url("../images/bopen.png");
+    background-size: 90%;
+}
+
+#mangos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: #BAB8A3;
+}
+#mangos img {
+    position: absolute;
+    display: block;
+    /* top: 6%; */
+}
+#mangos img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#m1 {
+    width: 12%;
+    top: 22%;
+    margin-right: 15%;
+    margin-left: 12%;
+}
+
+#m2 {
+    width: 10%;
+    margin-right: 15%;
+    left: 44%;
+    top: 29%;
+}
+#m3 {
+    width: 15%;
+    right: 13%;
+    top: 6%;
+}
+#mangos span {
+    position: absolute;
+    font-size: 25px;
+    font-family:"FZShuTi";
+    color: #4A3004;
+    font-weight: bold;
+    /* top: 65%; */
+}
+#s1 {
+   left: 13%;
+   top: 65%;
+}
+#s2 {
+    left: 40%;
+    top: 65%;
+}
+#s3 {
+    right: 16%;
+    top: 65%;
+}
+#m1info {
+    position: absolute;
+    width: 15%;
+    height: 40%;
+    top: 45%;
+    left: 1%;
+    border-radius: 40%;
+    background-color: antiquewhite;
+    opacity: 0.7;
+    overflow-y: auto;
+    font-size: 16px;
+    color: #4A3004;
+    font-family: "FZShuTi";
+    padding: 10px;
+    display: none;
+}
+#m1info::-webkit-scrollbar {
+    width: 0;
+}
+#m2info {
+    position: absolute;
+    width: 12%;
+    height: 35%;
+    top: 45%;
+    left: 30%;
+    border-radius: 40%;
+    background-color: antiquewhite;
+    opacity: 0.7;
+    overflow-y: auto;
+    font-size: 16px;
+    color: #4A3004;
+    font-family: "FZShuTi";
+    padding: 10px;
+    display: none;
+}
+#m2info::-webkit-scrollbar {
+    width: 0;
+}
+#m3info {
+    position: absolute;
+    width: 13%;
+    height: 40%;
+    top: 25%;
+    right: 28%;
+    border-radius: 40%;
+    background-color: antiquewhite;
+    opacity: 0.7;
+    overflow-y: auto;
+    font-size: 16px;
+    color: #4A3004;
+    font-family: "FZShuTi";
+    padding: 10px;
+    display: none;
+}
+#m3info::-webkit-scrollbar {
+    width: 0;
+}
+
+#phone {
+    bottom: 5%;
+    left: 10%;
+}
+
+
+#house {
+    /* position: absolute; */
+    float: left;
+    width: 25%;
+    z-index: 4;
+}
+
+.instruct {
+    float: left;
+    width: 18%;
+    z-index: 4;
+}
+
+.village {
+    float: left;
+    width: 40%;
+    z-index: 4;
+}
+
+#next {
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    right: 4%;
+    bottom: 10%;
+    border: #413933 2px solid;
+    border-radius: 5px;
+    color: #3a3a31;
+    font-family: '宋体';
+    background-color: #eedead;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 3;
+}

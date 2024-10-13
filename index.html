@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/first_step.css">
+    <link rel="stylesheet" href="./css/final.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.js"></script>
+</head>
+<body>
+    <img src="./img/background-border.png" class="background-container"/>
+    <div class="first_step" style="z-index: 999999999;">
+        <img src="./img/box.PNG" class="box_">
+        <img src="./img/baini.png" class="item_logo">
+        <!-- <div class="shadowCircle"></div> -->
+
+        <h1 class="title">壮IN</h1>
+        <h1 class="title_slogen">盒你相遇</h1>
+
+        <div class="help_window">
+            <img src="./img/btn-close.png" class="btn_close">
+            <div class="help_window_inside">
+                <p>TestTestTestTest</p>
+                <p>TestTestTestTest</p>
+                <p>TestTestTestTest</p>
+                <h3>第二点</h3>
+                <p>TestTestTestTest</p>
+                <h3>第三点</h3>
+                <p>TestTestTestTest</p>
+            </div>
+        </div>
+        <div class="outWorld"></div>
+    </div>
+
+    <img src="./img/item_star.png" class="item_star star1">
+    <img src="./img/item_star.png" class="item_star star2">
+    <img src="./img/item_star.png" class="item_star star3">
+    <div class="itemBox_left" style="z-index: 9999;">
+        <img src="./img/btn-help.png" class="btn_help">
+        <img src="./images/mute.png" class="music" onclick="ismute()"></img>
+        <!-- <img src="./img/btn-music.png" class="btn_music"> -->
+    </div>
+
+    
+    <div class="second_step" style="z-index: 999999;">
+        <h2>选择你最喜欢的文秀书记的形象吧</h2>
+        <div class="people_unclear">
+            <img src="./img/front_unclear.png">
+        </div>
+        <div class="people_kindBox">
+            <div class="people_kind1">
+                <img src="./img/front2.png">
+            </div>
+            <div class="people_kind2">
+                <img src="./img/front3.png">
+            </div>
+        </div>
+        <p class="to_step3">进入</p>
+    </div>
+
+
+
+    <div id="page3" style="display: none;">
+        <audio src="./images/click1.mp3" id="sound1"></audio>
+        <audio src="./images/click2.mp3" id="sound2"></audio>
+        <div id="people"></div>
+        <ul id="boxes">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div id="mango">
+            <img id="m" src="./images/mango.png">
+        </div>
+
+        <div id="info">
+            <div id="close">X</div>
+            <div id="content">
+                
+            </div>
+        </div>
+        <div class="bg" id="bg"></div>
+        <button id="next" onclick="trun()">就要它了</button>
+    </div>
+
+
+    <div id="page4" style="display: none; z-index: 9999;">
+        <div class="box"></div>
+        <input type="text" class="name" maxlength="10">
+        <span class="sentence">,与壮IN一起，助力乡村振兴。</span>
+        <div class="wechat">
+            <img src="./images/wechat.png" width="100%" >
+        </div>
+        <p class="sentence" style="left: 45%;top: 45%;">
+            已生成数字藏品，您的数字藏品编号为<br>
+            <span style="color: antiquewhite;" id="code">NO.XXXX.</span>
+            <br>您可凭借编号来到百色<br>领取您的专属礼品噢！
+        </p>
+        <span class="sentence" style="left: 75%;top: 65%;">↓快转发至朋友圈吧！</span>
+    </div>
+    <audio src="./images/bgm.mp3" id="bgm" loop></audio>
+</body>
+</html>
+<script src="./js/main.js"></script>
+<script src="./js/main_.js"></script>
+<script src="./js/clickTime.js"></script>
+<script src="./js/load.js"></script>
+<script src="./js/startCircle.js"></script>
+<script src="./js/walk.js"></script>

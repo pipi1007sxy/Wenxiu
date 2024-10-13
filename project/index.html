@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丢芒果</title>
+    <link href="./css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/final.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="page3">
+        <div class="music" onclick="ismute()"></div>
+        <audio src="./images/click1.mp3" id="sound1"></audio>
+        <audio src="./images/click2.mp3" id="sound2"></audio>
+        <div id="people"></div>
+        <ul id="boxes">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div id="mango">
+            <img id="m" src="./images/mango.png">
+        </div>
+
+        <div id="info">
+            <div id="close">X</div>
+            <div id="content">
+                
+            </div>
+        </div>
+        <div class="bg" id="bg"></div>
+        <button id="next" onclick="trun()">就要它了</button>
+    </div>
+
+    <div id="page4">
+        <div class="box"></div>
+        <input type="text" class="name" maxlength="10">
+        <span class="sentence">,与壮IN一起，助力乡村振兴。</span>
+        <div class="wechat">
+            <img src="./images/wechat.png" width="100%">
+        </div>
+        <p class="sentence" style="left: 45%;top: 45%;">
+            已生成数字藏品，您的数字藏品编号为<br>
+            <span style="color: antiquewhite;" id="code">NO.XXXX.</span>
+            <br>您可凭借编号来到百色<br>领取您的专属礼品噢！
+        </p>
+        <span class="sentence" style="left: 85%;top: 65%;">↓快转发至朋友圈吧！</span>
+    </div>
+    <audio src="./images/bgm.mp3" id="bgm"></audio>
+</body>
+<script type="text/javascript" src="./js/main.js"></script>
+
+</html>

@@ -1,0 +1,52 @@
+
+.box {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 25%;
+    left: 15%;
+    background-image: url(../images/box.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: black; */
+}
+
+.name {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    top: 14%;
+    left: 25%;
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: "宋体";
+    color: #713c0f;
+    font-weight: 600;
+    text-indent: 1em;
+}
+
+.sentence {
+    position: absolute;
+    top: 15%;
+    left: 46%;
+    font-size: 26px;
+    font-family: "宋体";
+    color: #713c0f;
+    font-weight: 600;
+}
+
+.wechat {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 10%;
+    bottom: 10%;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+.wechat:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

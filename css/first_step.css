@@ -1,0 +1,234 @@
+@keyframes musicCircle {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes boxBreathe {
+    0%{
+        transform: translateX(-50%) translateY(-50%) scale(1);
+    }
+    50%{
+        transform: translateX(-50%) translateY(-50%) scale(1.06);
+    }
+    100%{
+        transform: translateX(-50%) translateY(-50%) scale(1);
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* 确保页面没有滚动条 */
+    background-color: #fbf5ec;
+  }
+.background-container {
+    height: 100vh; /* 使用视窗高度，使背景图片与页面高度一致 */
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+}
+.box_{
+    height: 580px;
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation: boxBreathe 4s linear infinite;
+    cursor: pointer;
+}
+.itemBox_left{
+    position: absolute;
+    right: 70px;
+    top: 120px;
+    /* background-color: black; */
+    flex-direction: column;
+    text-align: center;
+}
+.btn_music{
+    height: 40px;
+    position: relative;
+    opacity: .8;
+    cursor: pointer;
+    animation: musicCircle 10s linear infinite;
+    display: block;
+}
+
+.btn_help{
+    display: block;
+    height: 32px;
+    width: 32px;
+    opacity: .8;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}
+.item_star{
+    height: 30px;
+    position: absolute;
+}
+.star1{
+    left: 68%;
+    height: 30px;
+    top: 15%;
+    transform: rotate(20deg);
+}
+.star2{
+    left: 12%;
+    height: 35px;
+    top: 70%;
+    transform: rotate(-30deg);
+}
+.star3{
+    left: 85%;
+    height: 40px;
+    top: 76%;
+    transform: rotate(10deg);
+}
+.shadowCircle {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, #372a22, transparent);
+    border-radius: 50%; /* 创建一个圆形 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-52%, -50%); /* 居中元素 */
+}
+.outWorld{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #372a2282;
+    z-index: 9;
+    display: none;
+}
+.help_window{
+    width: 500px;
+    max-height: 300px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 70px 35px 30px;
+    background-color: #fbf5ec;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%); /* 居中元素 */
+    display: none;
+}
+.help_window_inside{
+    height: 200px;
+    overflow-y: scroll;
+}
+.help_window_inside::-webkit-scrollbar{
+    width: 6px;
+}
+.help_window_inside::-webkit-scrollbar-thumb{
+    border-radius: 12px;
+    background: rgba(22, 32, 55, 0.15);
+}
+.help_window_inside::-webkit-scrollbar-track{
+    border-radius: 12px;
+    background: rgba(22, 32, 55, 0.05);
+}
+.btn_close{
+    height: 28px;
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.btn_close:hover{
+    transform: rotate(90deg);
+}
+.title{
+    position: absolute;
+    font-size: 130px;
+    color: #74473c;
+    font-family: 'Times New Roman', Times, serif;
+    left: 25%;
+    top: 5%;
+    transform: translateX(-50%);
+}
+.title_slogen{
+    position: absolute;
+    color: #48312bd6;
+    left: 62%;
+    top: 38%;
+    letter-spacing: -4px;
+    -webkit-text-fill-color: transparent;
+    font-size: 100px;
+}
+.title_slogen::after{
+    content: '盒你相遇';
+    position: absolute;
+    left: 0;
+    -webkit-text-stroke: 2px;
+    -webkit-text-fill-color: transparent;
+}
+.item_logo{
+    height: 220px;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    transform: rotate(-0deg);
+}
+.second_step{
+    display: none;
+}
+.second_step{
+    position: absolute;
+    min-height: 300px;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    padding: 75px 0;
+}
+.second_step h2{
+    font-size: 30px;
+    color: #693c2d;
+    text-align: center;
+    font-family: '宋体';
+}
+.people_unclear,.people_kindBox{
+    text-align: center;
+}
+.people_kindBox div{
+    margin: 10px;
+}
+.people_unclear img{
+    height: 300px;
+}
+.people_kind1 img,.people_kind2 img{
+    height: 120px;
+}
+.people_kind1,.people_kind2{
+    border: #372a22ba 2px solid;
+    background-color: #372a226c;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 5px;
+    transition: .3s;
+    opacity: .8;
+    cursor: pointer;
+}
+.people_kind1:hover,.people_kind2:hover{
+    opacity: 1;
+    transform: scale(1.02);
+}
+.to_step3{
+    position: absolute;
+    right: 0;
+    bottom: 14%;
+    font-size: 25px;
+    background-color: #eedead;
+    padding: 6px 15px;
+    border: #4e463f solid 2px;
+    border-radius: 5px;
+    font-family: '宋体';
+    cursor: pointer;
+}
